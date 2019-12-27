@@ -1,0 +1,13 @@
+[win2016]
+192.168.182.149
+
+[vm:children]
+win2016
+
+[vm:vars]
+ansible_user=Administrator
+ansible_password=p@ssw0rd
+ansible_connection=winrm
+#ansible_winrm_scheme=https
+#ansible_winrm_transport=basic
+ansible_winrm_server_cert_validation=ignore
